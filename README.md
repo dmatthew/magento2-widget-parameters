@@ -40,3 +40,5 @@ Useful widget parameter types for improved CMS Page building in Magento 2. Adds 
     <block class="Dmatthew\WidgetParameters\Block\Adminhtml\Widget\Type\Wysiwyg" />
 </parameter>
 ```
+
+![Image Chooser](docs/screenshots/WysiwygWidgetParameter.png)
