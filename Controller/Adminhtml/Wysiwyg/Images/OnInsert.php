@@ -9,7 +9,7 @@ class OnInsert extends \Magento\Cms\Controller\Adminhtml\Wysiwyg\Images
     protected $resultRawFactory;
 
     /**
-     * @var \Xterra\CustomWidgets\Helper\Wysiwyg\Images
+     * @var \Dmatthew\WidgetParameters\Helper\Wysiwyg\Images
      */
     private $imageHelper;
 
@@ -17,13 +17,13 @@ class OnInsert extends \Magento\Cms\Controller\Adminhtml\Wysiwyg\Images
      * @param \Magento\Backend\App\Action\Context $context
      * @param \Magento\Framework\Registry $coreRegistry
      * @param \Magento\Framework\Controller\Result\RawFactory $resultRawFactory
-     * @param \Xterra\CustomWidgets\Helper\Wysiwyg\Images
+     * @param \Dmatthew\WidgetParameters\Helper\Wysiwyg\Images
      */
     public function __construct(
         \Magento\Backend\App\Action\Context $context,
         \Magento\Framework\Registry $coreRegistry,
         \Magento\Framework\Controller\Result\RawFactory $resultRawFactory,
-        \Xterra\CustomWidgets\Helper\Wysiwyg\Images $imageHelper
+        \Dmatthew\WidgetParameters\Helper\Wysiwyg\Images $imageHelper
     ) {
         $this->resultRawFactory = $resultRawFactory;
         parent::__construct($context, $coreRegistry);
