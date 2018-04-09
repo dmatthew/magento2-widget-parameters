@@ -19,6 +19,8 @@ Useful widget parameter types for improved CMS Page building in Magento 2. Adds 
 </parameter>
 ```
 
+![Image Chooser](docs/screenshots/ImageChooserWidgetParameter.png)
+
 ### Textarea
 
 ```xml
@@ -27,6 +29,8 @@ Useful widget parameter types for improved CMS Page building in Magento 2. Adds 
     <block class="Dmatthew\WidgetParameters\Block\Adminhtml\Widget\Type\Textarea" />
 </parameter>
 ```
+
+![Image Chooser](docs/screenshots/TextareaWidgetParameter.png)
 
 ### Wysiwyg
 
