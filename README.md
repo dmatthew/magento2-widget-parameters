@@ -43,6 +43,10 @@ Useful widget parameter types for improved CMS Page building in Magento 2. Adds 
 
 ![Image Chooser](docs/screenshots/WysiwygWidgetParameter.png)
 
+## License
+
+[MIT](/LICENSE.txt)
+
 ## Attribution
 
 This software uses Open Source software. See the [ATTRIBUTION](ATTRIBUTION.md) page for these projects.
