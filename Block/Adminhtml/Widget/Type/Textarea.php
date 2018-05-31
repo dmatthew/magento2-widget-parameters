@@ -19,6 +19,7 @@ Class Textarea extends \Magento\Backend\Block\Template
         $this->elementFactory = $elementFactory;
         parent::__construct($context, $data);
     }
+    
     /**
      * Prepare chooser element HTML
      *
