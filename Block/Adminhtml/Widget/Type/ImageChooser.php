@@ -21,8 +21,11 @@ class ImageChooser extends Template
      * @param Factory $elementFactory
      * @param array $data
      */
-    public function __construct(Context $context, Factory $elementFactory, $data = [])
-    {
+    public function __construct(
+        Context $context, 
+        Factory $elementFactory, 
+        $data = []
+    ) {
         $this->elementFactory = $elementFactory;
         parent::__construct($context, $data);
     }
