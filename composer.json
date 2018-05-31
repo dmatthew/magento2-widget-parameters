@@ -2,10 +2,10 @@
     "name": "dmatthew/magento-widget-parameters",
     "description": "Custom widget parameter types for improved CMS Page building",
     "require": {
-        "php": "7.0.2|7.0.4|~7.0.6|~7.1.0"
+        "php": "~7.0|~7.1"
     },
     "type": "magento2-module",
-    "version": "100.0.0",
+    "version": "1.0.0",
     "license": [
         "MIT"
     ],
