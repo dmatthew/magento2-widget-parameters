@@ -45,7 +45,7 @@ Useful widget parameter types for improved CMS Page building in Magento 2. Adds 
 
 ## License
 
-[MIT](/LICENSE.txt)
+[MIT](/LICENSE)
 
 ## Attribution
 
