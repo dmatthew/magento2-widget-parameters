@@ -1,15 +1,10 @@
 <?php
+
 namespace Dmatthew\WidgetParameters\Block\Adminhtml\Widget\Type;
 
-use Magento\Backend\Block\Template;
 use Magento\Framework\Data\Form\Element\AbstractElement;
-use Magento\Backend\Block\Template\Context;
-use Magento\Framework\Data\Form\Element\Factory;
 
-/**
- * Class ImageChooser
- */
-class ImageChooser extends Template
+class ImageChooser extends \Magento\Backend\Block\Template
 {
     /**
      * @var Factory
@@ -22,8 +17,8 @@ class ImageChooser extends Template
      * @param array $data
      */
     public function __construct(
-        Context $context, 
-        Factory $elementFactory, 
+        \Magento\Backend\Block\Template\Context $context, 
+        \Magento\Framework\Data\Form\Element\Factory $elementFactory, 
         $data = []
     ) {
         $this->elementFactory = $elementFactory;
