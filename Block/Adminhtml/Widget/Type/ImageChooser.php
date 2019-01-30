@@ -17,8 +17,8 @@ class ImageChooser extends \Magento\Backend\Block\Template
      * @param array $data
      */
     public function __construct(
-        \Magento\Backend\Block\Template\Context $context, 
-        \Magento\Framework\Data\Form\Element\Factory $elementFactory, 
+        \Magento\Backend\Block\Template\Context $context,
+        \Magento\Framework\Data\Form\Element\Factory $elementFactory,
         $data = []
     ) {
         $this->elementFactory = $elementFactory;
@@ -37,7 +37,7 @@ class ImageChooser extends \Magento\Backend\Block\Template
         $config = $this->_getData('config');
         $onInsertUrl = $this->getUrl('dmatthew_widgets/wysiwyg_images/onInsert');
         $sourceUrl = $this->getUrl('cms/wysiwyg_images/index',
-            ['target_element_id' => $element->getId(), 'on_insert_url' => $onInsertUrl]);
+            ['target_element_id' => $element->getId(), 'on_insert_url' => urlencode($onInsertUrl)]);
         
         /** @var \Magento\Backend\Block\Widget\Button $chooser */
         $chooser = $this->getLayout()->createBlock('Magento\Backend\Block\Widget\Button')
@@ -46,7 +46,7 @@ class ImageChooser extends \Magento\Backend\Block\Template
             ->setLabel($config['button']['open'])
             ->setOnClick('MediabrowserUtility.openDialog(\'' . $sourceUrl . '\', 0, 0, "Insert File...", {})')
             ->setDisabled($element->getReadonly());
-        
+
         /** @var \Magento\Framework\Data\Form\Element\Text $input */
         $input = $this->elementFactory->create("text", ['data' => $element->getData()]);
         $input->setId($element->getId());
@@ -55,11 +55,11 @@ class ImageChooser extends \Magento\Backend\Block\Template
         if ($element->getRequired()) {
             $input->addClass('required-entry');
         }
-        
+
         $element->setData('after_element_html', $input->getElementHtml()
             . $chooser->toHtml() . "<script>require(['mage/adminhtml/browser']);</script>");
         $element->setValue('');  // Hides the additional label that gets added.
-        
+
         return $element;
     }
 }
